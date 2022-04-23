@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Clearfix Hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/* Layout Styling */
+
+header {
+    height: 145px;
+}
+
+.logo {
+    padding-top: 6%;
+}
+
+.topLeft {
+    width: 15%;
+    float: left;
+}
+
+.topMiddle {
+    width: 55%;
+    float: left;
+}
+
+.topRight {
+    width: 30%;
+}
+
+.topLeft, .topMiddle, .topRight {
+    float: left;
+}
+
+main {
+    width: 50%;
+    height: 700px;
+    float: left;
+}
+
+.featuredStories {
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+
+.subscriptions {
+    width: 25%;
+    height: 700px;
+    float: left;
+}
+
+/* Header Styling */
+
+.green {
+    color: #089e00;
+}
+
+.topMiddle>section, .topRight>section {
+    height: 60.5px;
+}
+
+.topMiddle {
+    font-size: 2.5rem;
+}
+
+.topMiddle p {
+    margin: 0;
+    padding: 5%;
+}
+
+.topMiddle li {
+    float: left;
+    list-style: none;
+    width: 25%;
+    font-size: 3rem;
+}
+
+.topMiddle a {
+    color: grey;
+    text-decoration: none;
+}
+
+.show {
+    display: none;
+}
+
+.social {
+    font-size: 2.5rem;
+}
+.social p {
+    margin: 1% 0% 0% 1%;
+}
+
+.search button, .search input {
+    float: left;
+}
+
+.search button {
+    background: #3e433e;
+    color: white;
+    padding: 2% 4%;
+    margin-right: 4%;
+}
+
+.search input {
+    padding: 2% 4%;
+}
+
+/* Banner Style */
+
+.ad img {
+    width: 100%;
+}
+
+/* Main Section Styling */
+
+.watch {
+    font-size: 3rem;
+}
+
+.video {
+    width: 100%;
+}
+
+.sub {
+    color: grey;
+    font-style: italic;
+    font-size: 1.75rem;
+    padding: 0 4%;
+}
+
+/* Featured Stories Section Styling */
+
+.featuredStories h2 {
+    font-size: 3rem;
+    padding: 0 0 0 10%;
+}
+
+.stories li {
+    list-style: none;
+    clear: both;
+    font-size: 1.60rem;
+}
+
+.stories img {
+    float: left;
+    height: 90px;
+    margin: 1% 0 8% 0;
+}
+
+.stories p {
+    font-style: italic;
+    color: grey;
+}
+
+/* Subscriptions Section / Right Aside Styling */
+
+.greyBox {
+    font-size: 3rem;
+    padding: 0 4%;
+    background: #ececec;
+}
+
+.greyBox h3 {
+    border-top: 5px solid #d5d5d5;
+    border-bottom: 5px solid #d5d5d5;
+    margin: 0;
+}
+
+.greenBox {
+    background: #0f4a00;
+    color: white;
+    text-transform: uppercase;
+    height: auto;
+}
+
+.greenBox p {
+    font-size: 2rem;
+    margin: 0;
+    padding: 2% 0 2% 2%;
+}
+
+.lastBit {
+    width: 100%;
+    list-style: none;
+}
+
+.lastBit input+p {
+    display: inline;
+    font-size: 2rem;
+}
+
+.lastBit li {
+    border-top: 2px solid lightgrey;
+    border-bottom: 2px solid lightgrey;
+}
+
+.lastBit p+p {
+    font-size: 1.5rem;
+    padding: 0 8%;
+    margin: 0 0 10% 0;
+}
+
+.bottomEmail, .lastButton {
+    float: left;
+    padding: 2%;
+}
+
+.lastButton {
+    color: white;
+    text-transform: uppercase;
+    background: #0a9600;
+    margin: 0 7%;
+}
+
+.bottomEmail {
+    margin-left: 6%;
+}
+
+.seeAll {
+        font-size: 2rem;
+        padding: 10%;
+}
+
+.seeAll a {
+    color: grey;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (min-width: 770px) and (max-width: 1024px) {
+    .logo {
+        padding: 5% 0% 0% 0%;
+        margin-top: 15%;
+        height: 92px;
+    }
+    .topMiddle li {
+        width: 24%;
+        font-size: 2rem;
+    }
+    .social {
+        font-size: 1.75rem;
+    }
+    .search input {
+        padding: 2% 2%;
+    }
+    .stories img {
+        height: 62px;
+    }
+    .greyBox {
+        font-size: 2rem;
+    }
+    .greenBox p {
+        font-size: 1.5rem;
+    }
+
+    .lastButton {
+        margin: 5% 7%;
+        width: 91%;
+    }
+}
+
+@media (min-width: 427px) and (max-width: 769px) {
+    .logo {
+        height: 70px;
+    }
+    .topMiddle li {
+        font-size: 1.5rem;
+    }
+    .topMiddle {
+        font-size: 2rem;
+    }
+    .subscriptions {
+        display: none;
+    }
+
+    .featuredStories {
+        width: 50%;
+    }
+    .social {
+        font-size: 1.5rem;
+    }
+
+    .stories img {
+        margin: 1% 3% 8% 0;
+    }
+}
+
+@media all and (max-width: 426px) {
+    .hidden, .topMiddle p, .ad, main  {
+        display: none;
+    }
+    .show {
+        display: inline-block;
+    }
+    .topMiddle {
+        width: 20%;
+    }
+    .featuredStories {
+        width: 100%;
+    }
+    .logo {
+        height: 60px;
+    }
+    .topMiddle li {
+        font-size: 1.5rem;
+    }
+    .topMiddle {
+        font-size: 2rem;
+    }
+    .topRight {
+        width: 55%;
+    }
+    .subscriptions {
+        display: none;
+    }
+    .social {
+        font-size: 1rem;
+    }
+    .stories img {
+        margin: 1% 3% 8% 0;
+    }
+}
